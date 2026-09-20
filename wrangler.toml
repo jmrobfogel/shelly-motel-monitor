@@ -1,5 +1,5 @@
 name = "shelly-door-monitor"
-main = "src/index.js"
+main = "index.js"
 compatibility_date = "2025-09-01"
 
 # Workers Logs: shows every console.log line under Workers & Pages > shelly-door-monitor > Observability / Logs
@@ -9,7 +9,7 @@ enabled = true
 [[d1_databases]]
 binding = "DB"
 database_name = "motel-door-events"
-database_id = "PASTE-YOUR-D1-DATABASE-ID-HERE"
+database_id = "b2cea36b-d2d9-4f86-a3f3-045dccbaa727"
 
 [vars]
 TIMEZONE = "America/New_York"

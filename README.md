@@ -1,3 +1,4 @@
+
 # Shelly motel door monitor (proof of concept)
 
 Shelly BLU Door/Window sensor  →  Bluetooth  →  Shelly Plug US Gen4 (runs a script)  →  HTTPS POST  →  Cloudflare Worker  →  D1 database

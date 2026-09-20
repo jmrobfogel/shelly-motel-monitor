@@ -1,0 +1,16 @@
+{
+  "name": "shelly-motel-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Door open/close event collector for motel rooms (Shelly BLU Door/Window -> Cloudflare Worker + D1)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init:local": "wrangler d1 execute motel-door-events --local --file=schema.sql",
+    "db:init:remote": "wrangler d1 execute motel-door-events --remote --file=schema.sql",
+    "test:events": "bash test/send-test-events.sh"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

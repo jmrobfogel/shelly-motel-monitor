@@ -1,0 +1,17 @@
+name = "shelly-door-monitor"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+# Workers Logs: shows every console.log line under Workers & Pages > shelly-door-monitor > Observability / Logs
+[observability]
+enabled = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "motel-door-events"
+database_id = "PASTE-YOUR-D1-DATABASE-ID-HERE"
+
+[vars]
+TIMEZONE = "America/New_York"
+
+# The API_KEY is a secret, not a var. Set it with:  npx wrangler secret put API_KEY
